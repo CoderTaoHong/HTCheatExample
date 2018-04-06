@@ -1,0 +1,48 @@
+//
+//  PrefixHeader.pch
+//  HTChatUIExample
+//
+//  Created by coderhong on 2018/4/6.
+//  Copyright © 2018年 coderhong. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define  HT_ScreenWidth   [UIScreen mainScreen].bounds.size.width
+// UIScreen height.
+#define  HT_ScreenHeight  [UIScreen mainScreen].bounds.size.height
+// iPhone X
+#define  HT_iPhoneX (HT_ScreenWidth == 375.f && HT_ScreenHeight == 812.f ? YES : NO)
+
+// Status bar height.
+#define  HT_StatusBarHeight      (HT_iPhoneX ? 44.f : 20.f)
+// Navigation bar height.
+#define  HT_NavigationBarHeight  44.f
+// Status bar & navigation bar height.
+#define  HT_StatusBarAndNavigationBarHeight  (HT_iPhoneX ? 88.f : 64.f)
+
+// Tabbar height.
+#define  HT_TabbarHeight         (HT_iPhoneX ? (49.f+34.f) : 49.f)
+
+// Tabbar safe bottom margin.
+#define  HT_TabbarSafeBottomMargin         (HT_iPhoneX ? 34.f : 0.f)
+
+#define HT_ViewSafeAreInsets(view) ({UIEdgeInsets insets; if(@available(iOS 11.0, *)) {insets = view.safeAreaInsets;} else {insets = UIEdgeInsetsZero;} insets;})
+
+//#import "UIView+HTFrame.h"
+//#import "UIBarButtonItem+HTExtension.h"
+//#import "NSDate+MMExtension.h"
+//#import "HTConst.h"
+
+#ifdef DEBUG
+#define HTLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#define HTlogFunc HTLog(@"-------------");
+#else
+#define HTLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */

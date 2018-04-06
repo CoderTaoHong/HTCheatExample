@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F78F814207760D000A1CC77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F813207760D000A1CC77 /* AppDelegate.m */; };
+		3F78F817207760D000A1CC77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F816207760D000A1CC77 /* ViewController.m */; };
+		3F78F822207760D200A1CC77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F821207760D200A1CC77 /* main.m */; };
+		3F78F82C207760D200A1CC77 /* HTChatUIExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F82B207760D200A1CC77 /* HTChatUIExampleTests.m */; };
+		3F78F837207760D200A1CC77 /* HTChatUIExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F836207760D200A1CC77 /* HTChatUIExampleUITests.m */; };
+		3F78F886207775BA00A1CC77 /* UIImage+HTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F884207775BA00A1CC77 /* UIImage+HTExtension.m */; };
+		3F78F8B820777D0000A1CC77 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8A220777CFF00A1CC77 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		3F78F8B920777D0000A1CC77 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8AE20777CFF00A1CC77 /* MASCompositeConstraint.m */; };
+		3F78F8BA20777D0000A1CC77 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8AF20777CFF00A1CC77 /* MASConstraintMaker.m */; };
+		3F78F8BB20777D0000A1CC77 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8B020777CFF00A1CC77 /* MASLayoutConstraint.m */; };
+		3F78F8BC20777D0000A1CC77 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8B120777CFF00A1CC77 /* NSArray+MASAdditions.m */; };
+		3F78F8BD20777D0000A1CC77 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8B220777CFF00A1CC77 /* View+MASAdditions.m */; };
+		3F78F8BE20777D0000A1CC77 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8B520777CFF00A1CC77 /* MASConstraint.m */; };
+		3F78F8BF20777D0000A1CC77 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8B620777CFF00A1CC77 /* MASViewConstraint.m */; };
+		3F78F8C020777D0000A1CC77 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8B720777CFF00A1CC77 /* MASViewAttribute.m */; };
+		3F78F8C720777D4300A1CC77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F8C220777D4300A1CC77 /* Assets.xcassets */; };
+		3F78F8C820777D4300A1CC77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F8C320777D4300A1CC77 /* LaunchScreen.storyboard */; };
+		3F78F8C920777D4300A1CC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F8C520777D4300A1CC77 /* Main.storyboard */; };
+		3F78F8DA20777FAD00A1CC77 /* HTChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F8CB20777FAD00A1CC77 /* HTChatViewController.xib */; };
+		3F78F8DB20777FAD00A1CC77 /* HTChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8CC20777FAD00A1CC77 /* HTChatViewController.m */; };
+		3F78F8DC20777FAD00A1CC77 /* HTMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8CE20777FAD00A1CC77 /* HTMessage.m */; };
+		3F78F8DD20777FAD00A1CC77 /* HTSendMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F8D320777FAD00A1CC77 /* HTSendMessageCell.xib */; };
+		3F78F8DE20777FAD00A1CC77 /* HTReceiveMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8D420777FAD00A1CC77 /* HTReceiveMessageCell.m */; };
+		3F78F8DF20777FAD00A1CC77 /* HTReceiveMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F8D520777FAD00A1CC77 /* HTReceiveMessageCell.xib */; };
+		3F78F8E020777FAD00A1CC77 /* HTSendMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F78F8D620777FAD00A1CC77 /* HTSendMessageCell.m */; };
+		3F78F8E120777FAD00A1CC77 /* messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F78F8D820777FAD00A1CC77 /* messages.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F78F828207760D200A1CC77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F78F807207760D000A1CC77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F78F80E207760D000A1CC77;
+			remoteInfo = HTChatUIExample;
+		};
+		3F78F833207760D200A1CC77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F78F807207760D000A1CC77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F78F80E207760D000A1CC77;
+			remoteInfo = HTChatUIExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F78F80F207760D000A1CC77 /* HTChatUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTChatUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F78F812207760D000A1CC77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3F78F813207760D000A1CC77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3F78F815207760D000A1CC77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3F78F816207760D000A1CC77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3F78F820207760D200A1CC77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F78F821207760D200A1CC77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3F78F827207760D200A1CC77 /* HTChatUIExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTChatUIExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F78F82B207760D200A1CC77 /* HTChatUIExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTChatUIExampleTests.m; sourceTree = "<group>"; };
+		3F78F82D207760D200A1CC77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F78F832207760D200A1CC77 /* HTChatUIExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTChatUIExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F78F836207760D200A1CC77 /* HTChatUIExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTChatUIExampleUITests.m; sourceTree = "<group>"; };
+		3F78F838207760D200A1CC77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F78F853207763A600A1CC77 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3F78F884207775BA00A1CC77 /* UIImage+HTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HTExtension.m"; sourceTree = "<group>"; };
+		3F78F885207775BA00A1CC77 /* UIImage+HTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HTExtension.h"; sourceTree = "<group>"; };
+		3F78F8A120777CFF00A1CC77 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		3F78F8A220777CFF00A1CC77 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		3F78F8A320777CFF00A1CC77 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		3F78F8A420777CFF00A1CC77 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		3F78F8A520777CFF00A1CC77 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3F78F8A620777CFF00A1CC77 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		3F78F8A720777CFF00A1CC77 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		3F78F8A820777CFF00A1CC77 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		3F78F8A920777CFF00A1CC77 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		3F78F8AA20777CFF00A1CC77 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		3F78F8AB20777CFF00A1CC77 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		3F78F8AC20777CFF00A1CC77 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		3F78F8AD20777CFF00A1CC77 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		3F78F8AE20777CFF00A1CC77 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		3F78F8AF20777CFF00A1CC77 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		3F78F8B020777CFF00A1CC77 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		3F78F8B120777CFF00A1CC77 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		3F78F8B220777CFF00A1CC77 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		3F78F8B320777CFF00A1CC77 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		3F78F8B420777CFF00A1CC77 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		3F78F8B520777CFF00A1CC77 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		3F78F8B620777CFF00A1CC77 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		3F78F8B720777CFF00A1CC77 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		3F78F8C220777D4300A1CC77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F78F8C420777D4300A1CC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F78F8C620777D4300A1CC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F78F8CB20777FAD00A1CC77 /* HTChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HTChatViewController.xib; sourceTree = "<group>"; };
+		3F78F8CC20777FAD00A1CC77 /* HTChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTChatViewController.m; sourceTree = "<group>"; };
+		3F78F8CE20777FAD00A1CC77 /* HTMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMessage.m; sourceTree = "<group>"; };
+		3F78F8CF20777FAD00A1CC77 /* HTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMessage.h; sourceTree = "<group>"; };
+		3F78F8D120777FAD00A1CC77 /* HTReceiveMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTReceiveMessageCell.h; sourceTree = "<group>"; };
+		3F78F8D220777FAD00A1CC77 /* HTSendMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSendMessageCell.h; sourceTree = "<group>"; };
+		3F78F8D320777FAD00A1CC77 /* HTSendMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HTSendMessageCell.xib; sourceTree = "<group>"; };
+		3F78F8D420777FAD00A1CC77 /* HTReceiveMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTReceiveMessageCell.m; sourceTree = "<group>"; };
+		3F78F8D520777FAD00A1CC77 /* HTReceiveMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HTReceiveMessageCell.xib; sourceTree = "<group>"; };
+		3F78F8D620777FAD00A1CC77 /* HTSendMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSendMessageCell.m; sourceTree = "<group>"; };
+		3F78F8D820777FAD00A1CC77 /* messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = messages.plist; sourceTree = "<group>"; };
+		3F78F8D920777FAD00A1CC77 /* HTChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTChatViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F78F80C207760D000A1CC77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F78F824207760D200A1CC77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F78F82F207760D200A1CC77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F78F806207760D000A1CC77 = {
+			isa = PBXGroup;
+			children = (
+				3F78F811207760D000A1CC77 /* HTChatUIExample */,
+				3F78F82A207760D200A1CC77 /* HTChatUIExampleTests */,
+				3F78F835207760D200A1CC77 /* HTChatUIExampleUITests */,
+				3F78F810207760D000A1CC77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F78F810207760D000A1CC77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F80F207760D000A1CC77 /* HTChatUIExample.app */,
+				3F78F827207760D200A1CC77 /* HTChatUIExampleTests.xctest */,
+				3F78F832207760D200A1CC77 /* HTChatUIExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F78F811207760D000A1CC77 /* HTChatUIExample */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F8CA20777FAD00A1CC77 /* HTChatUI */,
+				3F78F812207760D000A1CC77 /* AppDelegate.h */,
+				3F78F813207760D000A1CC77 /* AppDelegate.m */,
+				3F78F815207760D000A1CC77 /* ViewController.h */,
+				3F78F816207760D000A1CC77 /* ViewController.m */,
+				3F78F885207775BA00A1CC77 /* UIImage+HTExtension.h */,
+				3F78F884207775BA00A1CC77 /* UIImage+HTExtension.m */,
+				3F78F820207760D200A1CC77 /* Info.plist */,
+				3F78F821207760D200A1CC77 /* main.m */,
+				3F78F853207763A600A1CC77 /* PrefixHeader.pch */,
+				3F78F8C120777D4300A1CC77 /* Resource */,
+				3F78F89F20777CFF00A1CC77 /* third */,
+			);
+			path = HTChatUIExample;
+			sourceTree = "<group>";
+		};
+		3F78F82A207760D200A1CC77 /* HTChatUIExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F82B207760D200A1CC77 /* HTChatUIExampleTests.m */,
+				3F78F82D207760D200A1CC77 /* Info.plist */,
+			);
+			path = HTChatUIExampleTests;
+			sourceTree = "<group>";
+		};
+		3F78F835207760D200A1CC77 /* HTChatUIExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F836207760D200A1CC77 /* HTChatUIExampleUITests.m */,
+				3F78F838207760D200A1CC77 /* Info.plist */,
+			);
+			path = HTChatUIExampleUITests;
+			sourceTree = "<group>";
+		};
+		3F78F89F20777CFF00A1CC77 /* third */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F8A020777CFF00A1CC77 /* Masonry */,
+			);
+			path = third;
+			sourceTree = "<group>";
+		};
+		3F78F8A020777CFF00A1CC77 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F8A120777CFF00A1CC77 /* MASCompositeConstraint.h */,
+				3F78F8A220777CFF00A1CC77 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				3F78F8A320777CFF00A1CC77 /* MASConstraint+Private.h */,
+				3F78F8A420777CFF00A1CC77 /* MASLayoutConstraint.h */,
+				3F78F8A520777CFF00A1CC77 /* NSArray+MASShorthandAdditions.h */,
+				3F78F8A620777CFF00A1CC77 /* MASConstraintMaker.h */,
+				3F78F8A720777CFF00A1CC77 /* View+MASAdditions.h */,
+				3F78F8A820777CFF00A1CC77 /* NSArray+MASAdditions.h */,
+				3F78F8A920777CFF00A1CC77 /* MASUtilities.h */,
+				3F78F8AA20777CFF00A1CC77 /* MASViewAttribute.h */,
+				3F78F8AB20777CFF00A1CC77 /* MASViewConstraint.h */,
+				3F78F8AC20777CFF00A1CC77 /* MASConstraint.h */,
+				3F78F8AD20777CFF00A1CC77 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				3F78F8AE20777CFF00A1CC77 /* MASCompositeConstraint.m */,
+				3F78F8AF20777CFF00A1CC77 /* MASConstraintMaker.m */,
+				3F78F8B020777CFF00A1CC77 /* MASLayoutConstraint.m */,
+				3F78F8B120777CFF00A1CC77 /* NSArray+MASAdditions.m */,
+				3F78F8B220777CFF00A1CC77 /* View+MASAdditions.m */,
+				3F78F8B320777CFF00A1CC77 /* View+MASShorthandAdditions.h */,
+				3F78F8B420777CFF00A1CC77 /* Masonry.h */,
+				3F78F8B520777CFF00A1CC77 /* MASConstraint.m */,
+				3F78F8B620777CFF00A1CC77 /* MASViewConstraint.m */,
+				3F78F8B720777CFF00A1CC77 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		3F78F8C120777D4300A1CC77 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F8C220777D4300A1CC77 /* Assets.xcassets */,
+				3F78F8C320777D4300A1CC77 /* LaunchScreen.storyboard */,
+				3F78F8C520777D4300A1CC77 /* Main.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3F78F8CA20777FAD00A1CC77 /* HTChatUI */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F8CB20777FAD00A1CC77 /* HTChatViewController.xib */,
+				3F78F8CC20777FAD00A1CC77 /* HTChatViewController.m */,
+				3F78F8CD20777FAD00A1CC77 /* Model */,
+				3F78F8D020777FAD00A1CC77 /* View */,
+				3F78F8D720777FAD00A1CC77 /* Data */,
+				3F78F8D920777FAD00A1CC77 /* HTChatViewController.h */,
+			);
+			path = HTChatUI;
+			sourceTree = SOURCE_ROOT;
+		};
+		3F78F8CD20777FAD00A1CC77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F8CE20777FAD00A1CC77 /* HTMessage.m */,
+				3F78F8CF20777FAD00A1CC77 /* HTMessage.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F78F8D020777FAD00A1CC77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F8D120777FAD00A1CC77 /* HTReceiveMessageCell.h */,
+				3F78F8D220777FAD00A1CC77 /* HTSendMessageCell.h */,
+				3F78F8D320777FAD00A1CC77 /* HTSendMessageCell.xib */,
+				3F78F8D420777FAD00A1CC77 /* HTReceiveMessageCell.m */,
+				3F78F8D520777FAD00A1CC77 /* HTReceiveMessageCell.xib */,
+				3F78F8D620777FAD00A1CC77 /* HTSendMessageCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F78F8D720777FAD00A1CC77 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3F78F8D820777FAD00A1CC77 /* messages.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F78F80E207760D000A1CC77 /* HTChatUIExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F78F83B207760D200A1CC77 /* Build configuration list for PBXNativeTarget "HTChatUIExample" */;
+			buildPhases = (
+				3F78F80B207760D000A1CC77 /* Sources */,
+				3F78F80C207760D000A1CC77 /* Frameworks */,
+				3F78F80D207760D000A1CC77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTChatUIExample;
+			productName = HTChatUIExample;
+			productReference = 3F78F80F207760D000A1CC77 /* HTChatUIExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F78F826207760D200A1CC77 /* HTChatUIExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F78F83E207760D200A1CC77 /* Build configuration list for PBXNativeTarget "HTChatUIExampleTests" */;
+			buildPhases = (
+				3F78F823207760D200A1CC77 /* Sources */,
+				3F78F824207760D200A1CC77 /* Frameworks */,
+				3F78F825207760D200A1CC77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F78F829207760D200A1CC77 /* PBXTargetDependency */,
+			);
+			name = HTChatUIExampleTests;
+			productName = HTChatUIExampleTests;
+			productReference = 3F78F827207760D200A1CC77 /* HTChatUIExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F78F831207760D200A1CC77 /* HTChatUIExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F78F841207760D200A1CC77 /* Build configuration list for PBXNativeTarget "HTChatUIExampleUITests" */;
+			buildPhases = (
+				3F78F82E207760D200A1CC77 /* Sources */,
+				3F78F82F207760D200A1CC77 /* Frameworks */,
+				3F78F830207760D200A1CC77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F78F834207760D200A1CC77 /* PBXTargetDependency */,
+			);
+			name = HTChatUIExampleUITests;
+			productName = HTChatUIExampleUITests;
+			productReference = 3F78F832207760D200A1CC77 /* HTChatUIExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F78F807207760D000A1CC77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HT;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = coderhong;
+				TargetAttributes = {
+					3F78F80E207760D000A1CC77 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					3F78F826207760D200A1CC77 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 3F78F80E207760D000A1CC77;
+					};
+					3F78F831207760D200A1CC77 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 3F78F80E207760D000A1CC77;
+					};
+				};
+			};
+			buildConfigurationList = 3F78F80A207760D000A1CC77 /* Build configuration list for PBXProject "HTChatUIExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F78F806207760D000A1CC77;
+			productRefGroup = 3F78F810207760D000A1CC77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F78F80E207760D000A1CC77 /* HTChatUIExample */,
+				3F78F826207760D200A1CC77 /* HTChatUIExampleTests */,
+				3F78F831207760D200A1CC77 /* HTChatUIExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F78F80D207760D000A1CC77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F78F8DA20777FAD00A1CC77 /* HTChatViewController.xib in Resources */,
+				3F78F8C920777D4300A1CC77 /* Main.storyboard in Resources */,
+				3F78F8DD20777FAD00A1CC77 /* HTSendMessageCell.xib in Resources */,
+				3F78F8DF20777FAD00A1CC77 /* HTReceiveMessageCell.xib in Resources */,
+				3F78F8E120777FAD00A1CC77 /* messages.plist in Resources */,
+				3F78F8C820777D4300A1CC77 /* LaunchScreen.storyboard in Resources */,
+				3F78F8C720777D4300A1CC77 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F78F825207760D200A1CC77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F78F830207760D200A1CC77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F78F80B207760D000A1CC77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F78F817207760D000A1CC77 /* ViewController.m in Sources */,
+				3F78F8BC20777D0000A1CC77 /* NSArray+MASAdditions.m in Sources */,
+				3F78F8B820777D0000A1CC77 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				3F78F8C020777D0000A1CC77 /* MASViewAttribute.m in Sources */,
+				3F78F8DB20777FAD00A1CC77 /* HTChatViewController.m in Sources */,
+				3F78F8DE20777FAD00A1CC77 /* HTReceiveMessageCell.m in Sources */,
+				3F78F8BB20777D0000A1CC77 /* MASLayoutConstraint.m in Sources */,
+				3F78F8BD20777D0000A1CC77 /* View+MASAdditions.m in Sources */,
+				3F78F8B920777D0000A1CC77 /* MASCompositeConstraint.m in Sources */,
+				3F78F8E020777FAD00A1CC77 /* HTSendMessageCell.m in Sources */,
+				3F78F822207760D200A1CC77 /* main.m in Sources */,
+				3F78F8DC20777FAD00A1CC77 /* HTMessage.m in Sources */,
+				3F78F886207775BA00A1CC77 /* UIImage+HTExtension.m in Sources */,
+				3F78F8BA20777D0000A1CC77 /* MASConstraintMaker.m in Sources */,
+				3F78F814207760D000A1CC77 /* AppDelegate.m in Sources */,
+				3F78F8BE20777D0000A1CC77 /* MASConstraint.m in Sources */,
+				3F78F8BF20777D0000A1CC77 /* MASViewConstraint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F78F823207760D200A1CC77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F78F82C207760D200A1CC77 /* HTChatUIExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F78F82E207760D200A1CC77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F78F837207760D200A1CC77 /* HTChatUIExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F78F829207760D200A1CC77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F78F80E207760D000A1CC77 /* HTChatUIExample */;
+			targetProxy = 3F78F828207760D200A1CC77 /* PBXContainerItemProxy */;
+		};
+		3F78F834207760D200A1CC77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F78F80E207760D000A1CC77 /* HTChatUIExample */;
+			targetProxy = 3F78F833207760D200A1CC77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F78F8C320777D4300A1CC77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F78F8C420777D4300A1CC77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F78F8C520777D4300A1CC77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F78F8C620777D4300A1CC77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F78F839207760D200A1CC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3F78F83A207760D200A1CC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F78F83C207760D200A1CC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = NKW67GFDHM;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HTChatUIExample/PrefixHeader.pch";
+				INFOPLIST_FILE = HTChatUIExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderhong.HTChatUIExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6b8a9111-d579-4883-b5df-7a7e2a7ec885";
+				PROVISIONING_PROFILE_SPECIFIER = CodeHong;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F78F83D207760D200A1CC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HTChatUIExample/PrefixHeader.pch";
+				INFOPLIST_FILE = HTChatUIExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderhong.HTChatUIExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F78F83F207760D200A1CC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HTChatUIExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderhong.HTChatUIExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTChatUIExample.app/HTChatUIExample";
+			};
+			name = Debug;
+		};
+		3F78F840207760D200A1CC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HTChatUIExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderhong.HTChatUIExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTChatUIExample.app/HTChatUIExample";
+			};
+			name = Release;
+		};
+		3F78F842207760D200A1CC77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HTChatUIExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderhong.HTChatUIExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HTChatUIExample;
+			};
+			name = Debug;
+		};
+		3F78F843207760D200A1CC77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HTChatUIExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderhong.HTChatUIExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HTChatUIExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F78F80A207760D000A1CC77 /* Build configuration list for PBXProject "HTChatUIExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F78F839207760D200A1CC77 /* Debug */,
+				3F78F83A207760D200A1CC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F78F83B207760D200A1CC77 /* Build configuration list for PBXNativeTarget "HTChatUIExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F78F83C207760D200A1CC77 /* Debug */,
+				3F78F83D207760D200A1CC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F78F83E207760D200A1CC77 /* Build configuration list for PBXNativeTarget "HTChatUIExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F78F83F207760D200A1CC77 /* Debug */,
+				3F78F840207760D200A1CC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F78F841207760D200A1CC77 /* Build configuration list for PBXNativeTarget "HTChatUIExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F78F842207760D200A1CC77 /* Debug */,
+				3F78F843207760D200A1CC77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F78F807207760D000A1CC77 /* Project object */;
+}

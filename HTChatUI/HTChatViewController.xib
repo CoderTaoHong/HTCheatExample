@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HTChatViewController">
+            <connections>
+                <outlet property="bottomMargin" destination="djW-7x-pav" id="tYt-8s-k1H"/>
+                <outlet property="bottonViewMargin" destination="djW-7x-pav" id="RrA-3u-35L"/>
+                <outlet property="chatTableView" destination="xyo-5o-Dlg" id="XY0-xm-Lu3"/>
+                <outlet property="inputField" destination="sx0-lQ-lKn" id="I4z-mE-o8v"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RSM-ar-tMO" userLabel="底部工具条">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_bottom_bg" translatesAutoresizingMaskIntoConstraints="NO" id="hvG-do-Hk7">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yN-6a-VA8" userLabel="语音">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="LEv-8v-Ayd"/>
+                            </constraints>
+                            <state key="normal" image="chat_bottom_voice_nor"/>
+                            <state key="highlighted" image="chat_bottom_voice_press"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ooy-UY-Vh7" userLabel="添加">
+                            <rect key="frame" x="331" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="QT3-8I-eU7"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="xGt-0L-bZX"/>
+                            </constraints>
+                            <state key="normal" image="chat_bottom_up_nor"/>
+                            <state key="highlighted" image="chat_bottom_up_press"/>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" background="chat_bottom_textfield" translatesAutoresizingMaskIntoConstraints="NO" id="sx0-lQ-lKn" userLabel="输入框">
+                            <rect key="frame" x="52" y="8" width="227" height="28"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcI-SC-HHv" userLabel="表情">
+                            <rect key="frame" x="287" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="Bao-xF-6Zf"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="xeI-Km-MCS"/>
+                            </constraints>
+                            <state key="normal" image="chat_bottom_smile_nor"/>
+                            <state key="highlighted" image="chat_bottom_smile_press"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="8yN-6a-VA8" firstAttribute="leading" secondItem="RSM-ar-tMO" secondAttribute="leading" id="205-Yo-s1n"/>
+                        <constraint firstAttribute="trailing" secondItem="Ooy-UY-Vh7" secondAttribute="trailing" id="5g8-pF-4Jh"/>
+                        <constraint firstAttribute="bottom" secondItem="Ooy-UY-Vh7" secondAttribute="bottom" id="6nX-q3-Dme"/>
+                        <constraint firstAttribute="height" constant="44" id="7Dr-2z-xcX"/>
+                        <constraint firstAttribute="bottom" secondItem="sx0-lQ-lKn" secondAttribute="bottom" constant="8" id="Br5-Ox-pfX"/>
+                        <constraint firstAttribute="trailing" secondItem="hvG-do-Hk7" secondAttribute="trailing" id="CoC-V4-3iy"/>
+                        <constraint firstItem="hvG-do-Hk7" firstAttribute="leading" secondItem="RSM-ar-tMO" secondAttribute="leading" id="Eko-Kk-pG8"/>
+                        <constraint firstItem="8yN-6a-VA8" firstAttribute="top" secondItem="RSM-ar-tMO" secondAttribute="top" id="Hhi-MU-clL"/>
+                        <constraint firstItem="sx0-lQ-lKn" firstAttribute="leading" secondItem="8yN-6a-VA8" secondAttribute="trailing" constant="8" id="Pdx-8p-5qG"/>
+                        <constraint firstItem="YcI-SC-HHv" firstAttribute="top" secondItem="RSM-ar-tMO" secondAttribute="top" id="UYI-ha-10j"/>
+                        <constraint firstItem="sx0-lQ-lKn" firstAttribute="top" secondItem="RSM-ar-tMO" secondAttribute="top" constant="8" id="b2s-TW-i1z"/>
+                        <constraint firstAttribute="bottom" secondItem="YcI-SC-HHv" secondAttribute="bottom" id="b6W-LQ-I4i"/>
+                        <constraint firstItem="Ooy-UY-Vh7" firstAttribute="leading" secondItem="YcI-SC-HHv" secondAttribute="trailing" id="btu-NI-65f"/>
+                        <constraint firstItem="hvG-do-Hk7" firstAttribute="top" secondItem="RSM-ar-tMO" secondAttribute="top" id="eTK-Ol-eBg"/>
+                        <constraint firstItem="Ooy-UY-Vh7" firstAttribute="top" secondItem="RSM-ar-tMO" secondAttribute="top" id="hsn-Je-Hsh"/>
+                        <constraint firstAttribute="bottom" secondItem="8yN-6a-VA8" secondAttribute="bottom" id="lUF-aU-XM4"/>
+                        <constraint firstItem="YcI-SC-HHv" firstAttribute="leading" secondItem="sx0-lQ-lKn" secondAttribute="trailing" constant="8" id="orV-7P-zmb"/>
+                        <constraint firstAttribute="bottom" secondItem="hvG-do-Hk7" secondAttribute="bottom" id="xpo-De-JbO"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xyo-5o-Dlg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hRV-Ox-VnY"/>
+                        <outlet property="delegate" destination="-1" id="WZl-cl-V3R"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RSM-ar-tMO" firstAttribute="top" secondItem="xyo-5o-Dlg" secondAttribute="bottom" id="0YG-eO-xrL"/>
+                <constraint firstAttribute="trailing" secondItem="xyo-5o-Dlg" secondAttribute="trailing" id="3T2-Vn-hAR"/>
+                <constraint firstItem="xyo-5o-Dlg" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" constant="-44" id="TjD-WM-9K5"/>
+                <constraint firstAttribute="bottom" secondItem="RSM-ar-tMO" secondAttribute="bottom" id="djW-7x-pav"/>
+                <constraint firstItem="xyo-5o-Dlg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qEB-kO-ZpD"/>
+                <constraint firstItem="RSM-ar-tMO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tbl-nt-v75"/>
+                <constraint firstAttribute="trailing" secondItem="RSM-ar-tMO" secondAttribute="trailing" id="z67-hy-jLE"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_bottom_bg" width="10" height="42"/>
+        <image name="chat_bottom_smile_nor" width="34" height="34"/>
+        <image name="chat_bottom_smile_press" width="34" height="34"/>
+        <image name="chat_bottom_textfield" width="166" height="31"/>
+        <image name="chat_bottom_up_nor" width="34" height="34"/>
+        <image name="chat_bottom_up_press" width="34" height="34"/>
+        <image name="chat_bottom_voice_nor" width="34" height="34"/>
+        <image name="chat_bottom_voice_press" width="34" height="34"/>
+    </resources>
+</document>
