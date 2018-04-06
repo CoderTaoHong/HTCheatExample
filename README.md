@@ -5,4 +5,7 @@
     HTChatViewController *vc = [[HTChatViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 ```
-    
+
+* 实例效果
+
+![](https://github.com/CoderTaoHong/HTCheatExample/blob/master/HTChatUIExample/imags/chat.png)
